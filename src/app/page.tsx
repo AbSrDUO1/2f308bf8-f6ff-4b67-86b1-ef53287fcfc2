@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarBase from '@/components/navigation/NavbarBase';
 import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
@@ -26,7 +26,7 @@ export default function Home() {
         <BillboardHero title="Welcome to NovaSuite" subtitle="Your ultimate SaaS solution for managing tasks efficiently" />
       </div>
       <div id="about" data-section="about" className="scroll-mt-24">
-        <SocialsAbout title="About Us" descriptions={['NovaSuite is a leading SaaS platform.', 'We provide innovative solutions for effective management.']} />
+        <SocialsAbout title="About Us" descriptions={["NovaSuite is a leading SaaS platform.", "We provide innovative solutions for effective management."]} />
       </div>
       <div id="how-to-buy" data-section="how-to-buy" className="scroll-mt-24">
         <HowToBuy3D title="How to Buy" steps={[{title: 'Step 1', description: 'Sign up for our service', image: '/images/placeholder1.avif', position: 'left', isCenter: false}, {title: 'Step 2', description: 'Choose a plan that suits your needs', image: '/images/placeholder2.avif', position: 'center', isCenter: true}, {title: 'Step 3', description: 'Start using NovaSuite', image: '/images/placeholder3.avif', position: 'right', isCenter: false}]} />
