@@ -7,6 +7,7 @@ import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
 import BigNumberTokenomics from '@/components/sections/layouts/tokenomics/BigNumberTokenomics';
 import BentoFAQ from '@/components/sections/layouts/faq/BentoFAQ';
 import FooterLogoEmphasisBackgroundGradient from '@/components/footer/FooterLogoEmphasisBackgroundGradient';
+import { Shield, Users, ChartBar } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -32,7 +33,7 @@ export default function Home() {
         <HowToBuy3D title="How to Buy" steps={[{title: 'Step 1', description: 'Sign up for our service', image: '/images/placeholder1.avif', position: 'left', isCenter: false}, {title: 'Step 2', description: 'Choose a plan that suits your needs', image: '/images/placeholder2.avif', position: 'center', isCenter: true}, {title: 'Step 3', description: 'Start using NovaSuite', image: '/images/placeholder3.avif', position: 'right', isCenter: false}]} />
       </div>
       <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">
-        <BigNumberTokenomics title="Tokenomics" description="Overview of our resource allocation and pricing strategies." kpiItems={[{ value: '1M', description: 'Active Users', longDescription: 'The total number of users actively engaging with our service.', icon: 'Users' }, { value: '80%', description: 'Retention Rate', longDescription: 'Percentage of users who continue to use our service every month.', icon: 'Shield' }, { value: '$2M', description: 'Revenue', longDescription: 'Our total revenue generated in the last fiscal year.', icon: 'ChartBar' }]} />
+        <BigNumberTokenomics title="Tokenomics" description="Overview of our resource allocation and pricing strategies." kpiItems={[{ value: '1M', description: 'Active Users', longDescription: 'The total number of users actively engaging with our service.', icon: Users }, { value: '80%', description: 'Retention Rate', longDescription: 'Percentage of users who continue to use our service every month.', icon: Shield }, { value: '$2M', description: 'Revenue', longDescription: 'Our total revenue generated in the last fiscal year.', icon: ChartBar }]} />
       </div>
       <div id="faq" data-section="faq" className="scroll-mt-24">
         <BentoFAQ items={[{ title: 'What is NovaSuite?', content: 'A leading SaaS platform for management.' }, { title: 'How to contact support?', content: 'You can reach support via email or chat.' }, { title: 'What plans do you offer?', content: 'Unique plans tailored for various needs.' }, { title: 'Is there a trial period?', content: 'Yes, we offer a 14-day free trial.' }]} />
