@@ -24,7 +24,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased" style={{ background: 'linear-gradient(135deg, #6D5EFF 0%, #00C2FF 100%)' }}>
+      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`} style={{ background: 'linear-gradient(135deg, #6D5EFF 0%, #00C2FF 100%)' }}>
         {children}
       </body>
     </html>
